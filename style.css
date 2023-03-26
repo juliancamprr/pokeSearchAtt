@@ -1,7 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(31, 31, 31);
+    font-family: "Raleway";
 }
 
 .container {
@@ -14,16 +21,59 @@
 }
 
 .card {
-    font-family: sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 200px;
-    height: 200px;
+    width: 30em;
+    height: auto;
     background-color: aquamarine;
     border-radius: 10px;
     box-shadow: 2px 2px 10px 1px #00c3ff;
     padding: 10px;
     text-align: center;
+}
+
+input {
+    outline: none;
+    padding: 7px;
+    background-color: #00c3ff;
+    border: none;
+    border-radius: 4px;
+}
+
+input::placeholder {
+    color: blanchedalmond;
+}
+
+button {
+    border: none;
+    outline: none;
+    background-color: #00c3ff;
+    padding: 7px;
+    border-radius: 4px;
+    color: white;
+}
+
+.postInfo {
+    margin-top: 1em;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    text-align: start;
+}
+
+.postInfo img {
+    width: 12em;
+}
+
+@media screen and (max-width: 600px) {
+    .card {
+        width: 22em;
+        margin: 3em 0;
+    }
+
+    button {
+        margin-top: 1em;
+    }
 }
